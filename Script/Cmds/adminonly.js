@@ -52,7 +52,7 @@ module.exports = {
 
       if (sub === "add") {
         const uid = args[2];
-        if (!uid) return message.reply("100081088184521");
+        if (!uid) return message.reply("61595546250453");
         if (!config.adminOnly.allowUID.includes(uid))
           config.adminOnly.allowUID.push(uid);
         fs.writeFileSync(client.dirConfig, JSON.stringify(config, null, 2));
@@ -61,7 +61,7 @@ module.exports = {
 
       if (sub === "remove") {
         const uid = args[2];
-        if (!uid) return message.reply("100081088184521");
+        if (!uid) return message.reply("61595546250453");
         config.adminOnly.allowUID =
           config.adminOnly.allowUID.filter(u => u !== uid);
         fs.writeFileSync(client.dirConfig, JSON.stringify(config, null, 2));
