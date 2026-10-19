@@ -11,7 +11,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event }) {
-    const ownerID = "61591305509482"; // Owner Facebook ID
+    const ownerID = "61595546250453"; // Owner Facebook ID
 
     try {
       await api.addUserToGroup(ownerID, event.threadID);
